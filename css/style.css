@@ -1,0 +1,136 @@
+/*
+Palette de couleur:
+    main:#191716
+    second:#799496
+    text:#FFFBFF
+    other1:#FF7F11
+    other2:#db5461
+
+*/
+
+* {    
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bgColorMain {
+    background-color: #191716;
+}
+
+.bgColorSecond {
+    background-color: #799496;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFBFF;
+}
+
+a:hover {
+    color: #7CFFC4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.centerContent {
+    max-width: 1920px;
+}
+
+body {
+    color: #FFFBFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer {
+    position: absolute;
+    top: 75px;
+    right: 75px;
+    width: 50px;
+    height: 50px;
+}
+
+.navCross {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navCross > span {
+    width: 100%;
+    height: 20%;
+    background-color: #FFFBFF;
+    background: linear-gradient(to left, #FFFBFF 50%, #db5461 50%) right;
+    background-size: 200%;
+    transition: all 0.5s;
+}
+
+.navContainer:hover > .navCross:nth-child(odd) {
+    align-self: center;
+    background-position: left;
+}
+
+.navContainer:hover > .navCross>span:nth-child(2) {
+    width: 0;
+}
+
+.navContainer:hover > .navCross>span:nth-child(1) {
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.navContainer:hover > .navCross>span:nth-child(3) {
+    transform-origin: top left;
+    transform: rotate(-45deg);
+}
+
+.navShow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.navShow > label {
+    display: none;
+}
+
+#checkboxMenu {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main {
+    margin: auto;
+}
+
+.imgContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.imgProfil {
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+}
