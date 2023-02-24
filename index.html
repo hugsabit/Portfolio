@@ -9,23 +9,28 @@
     <link rel="stylesheet" href="css/tablette.css">
     <link rel="stylesheet" href="css/mobile.css">
 
-    <script async type="text/javascript" src="./js/menu.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+
+    <!-- <script async type="text/javascript" src="./js/menu.js"></script> -->
 
     <title>Portfolio - Hugo Habib</title>
 </head>
-<body class="bgColorMain">
-    <header class="header centerContent">
-        <div class="navContainer">
-            <div class="navCross">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="navShow">
-                <input type="checkbox" name="showMenu" id="checkboxMenu">
-                <label for="checkboxMenu">Menu</label>
-            </div>
+<body class="bgColorMain centerContent">
+    <div class="navContainer">
+        <div class="navCross">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        <div class="navShow">
+            <input type="checkbox" name="showMenu" id="checkboxMenu">
+            <label for="checkboxMenu">Menu</label>
+        </div>
+    </div>
+    <header class="header bgColorMain centerContent">
         <div class="navContent">
             <h1>Menu</h1>
             <nav class="nav">
@@ -43,7 +48,7 @@
             <div class="imgContainer">
                 <img src="./img/profil_picture.jpeg" alt="Photo de Hugo Habib" class="imgProfil">
             </div>
-            <h1>Portfolio - Hugo Habib</h1>
+            <h1>Portfolio - <span>Hugo Habib</span></h1>
             <p>Un développeur web aguerri</p>
             <q> Plus tard, il sera trop tard. Notre vie, c'est maintenant. </q>
         </section>

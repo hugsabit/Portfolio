@@ -1,4 +1,4 @@
-let menuSelector = document.getElementsByClassName('navCross');
+let menuSelector = document.getElementsByClassName('navContainer');
 let content = document.getElementsByClassName('header');
 
 console.log(content[0].style);
